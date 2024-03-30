@@ -23,7 +23,13 @@ public static void main(String args[])
 	{
 		System.out.println(p1.test(ar[i]));
 	}
-		
+		//orye oru argument vangi return boolean
+	//predicate returns only boolean value
+	//predicate accept oonly one argument
+	//function returns any type of value
+	//function accepts two argument
+	
+	
 }
 //public boolean age(int age)
 //{
