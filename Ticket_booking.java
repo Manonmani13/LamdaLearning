@@ -17,6 +17,8 @@ public static void main(String args[])
 	System.out.println(p.test(al));
 	int ar[]= {10,2,3,4,6,8};
 	Predicate<Integer> p1=no->(no%2!=0);
+	Predicate<Integer> p2=no->(no<10);
+
 	for(int i=0;i<ar.length;i++)
 	{
 		System.out.println(p1.test(ar[i]));
