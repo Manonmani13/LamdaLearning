@@ -1,19 +1,21 @@
 package com.lamda.learning.methodreference;
 
 public class Mobile implements Contract {
-//	public Mobile(int price)
-//	
-//	{
-//		price=price;
-//	}
+	int price;
+	public Mobile(int price)
+	
+	{
+		System.out.println("price"+price);
+	}
 public static void main(String[] args) {
 //	Contract c=(t)->System.out.println(t);
-	Mobile m=new Mobile();
-	Contract c=m :: show;
-	c.display(120);
+//	Mobile m=new Mobile();
+//	Contract c=m :: show;
+//	c.display(120);
 	Contract c1=Mobile :: show1;
-	
-
+//	c1.display(10);
+	c1=Mobile::new;
+		c1.display(100000);
 	//double clone operator is used to reduce effector of lamda
 }
 public void show(int value)
