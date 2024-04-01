@@ -17,6 +17,8 @@ public static void main(String[] args) {
 	System.out.println(min.getAsInt());
 	OptionalInt first=Arrays.stream(ar).findFirst();
 	System.out.println(first);
+	int s[]= {2,2,3,1,3,4,2};
+	Arrays.stream(s).distinct().forEach(System.out::println);
 
 }
 }
