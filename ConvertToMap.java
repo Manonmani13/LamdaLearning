@@ -39,5 +39,7 @@ public class ConvertToMap {
 		map.add(new ConvertToMap("naveen", "9834234234"));
 		Map<String,String> model=map.stream().collect(Collectors.toMap(p->p.name, p->p.number));
 		System.out.println(model);
+		List<String> ls=map.stream().map(ConvertToMap::getNumber).collect(Collectors.toList());
+		System.out.println(ls);
 	}
 }
