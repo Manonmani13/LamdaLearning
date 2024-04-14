@@ -47,5 +47,12 @@ public static void main(String[] args) {
 	prod.add(new ProductDetails("oni",29000l));
 	List<String> names=prod.stream().filter(n->n.price>23000).map(n->n.name).collect(Collectors.toList());
 	System.out.println(names);
+	double value=prod.stream().collect(Collectors.summingDouble(p->p.price));
+	System.out.println(value);
+	ProductDetails p=prod.stream().min((p1,p2)->p1.price>p2.price?1:-1).get();
+	System.out.println(p.getPrice());
+	ProductDetails pro=prod.stream().max((p1,p2)->p1.price>p2.price?1:-1).get();
+	System.out.println(pro.getPrice());
+	System.out.println(prod.stream().count());
 }
 }
